@@ -1,0 +1,13 @@
+schema_version = "1.0.0"
+
+id = "reflux_addon"
+name = "ReFlux Render Optimizer"
+version = "1.0.0"
+tagline = "Smart render optimization tool for Blender"
+maintainer = "you"
+
+type = "add-on"
+
+blender_version_min = "4.0.0"
+
+license = ["SPDX:GPL-2.0-or-later"]

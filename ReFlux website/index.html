@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>ReFlux | Blender Addon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="versionModal" class="modal">
+    <div class="modal-content">
+      <h2>Versions</h2>
+      <p>We are on the first version of the addon 🚀</p>
+      <button id="closeModal">OK</button>
+    </div>
+  </div>
+
+<!-- HERO SECTION -->
+<div class="hero">
+  <h2>RENDERS?</h2>
+  <h2>Now Faster.</h2>
+
+  <p class="subtitle">An addon for blender which faster ur render speed.</p>
+  <p class="subtitle">No more waste of time in tweaking every setting.</p>
+
+  <div class="hero-buttons">
+    <a href="https://www.instagram.com/reflux_support26/"
+       class="btn primary"
+       target="_blank"
+       rel="noopener noreferrer">
+      <i class="fa-brands fa-instagram"></i>
+      Instagram
+    </a>
+
+    <a href="https://discord.gg/3draRWqG"
+       class="btn primary"
+       target="_blank"
+       rel="noopener noreferrer">
+      <i class="fa-brands fa-discord"></i>
+      Discord
+    </a>
+  </div>
+</div>
+
+<!-- BACKGROUND DOTS -->
+<div id="dots"></div>
+
+<!-- HEADER -->
+<header>
+  
+<div class="logo-container">
+  
+  <a href="index.html" class="logo-icon">
+    <img src="assets/logo.png" alt="ReFlux Logo">
+  </a>
+
+  <h1 id="logo">
+    <b>R</b><span id="logo-text"></span>Flux
+  </h1>
+
+</div>
+
+  <button class="menu-toggle" onclick="toggleMenu(this)">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav id="nav">
+    <a href="features.html">Features</a>
+    <a href="donate.html" class="donate-glow">Donate❤️</a>
+    <a href="ticket.html">Submit a ticket</a>
+    <a href="#download">Download</a>
+    <a href="#" id="versionsBtn">Versions</a>
+    <a href="login.html">SIGNIN</a>
+  </nav>
+</header>
+
+<!-- SCROLL SPACE (IMPORTANT) -->
+<div style="height: 120vh;"></div>
+
+<!-- SCROLL REVEAL SECTION -->
+<div style="text-align:center; color:white; padding:100px 20px;">
+
+  <h1 class="reveal why-title">About ReFlux</h1>
+
+  <h2><p class="subtitle reveal">
+    ReFlux is a Blender addon designed to make rendering faster and more efficient, especially on low-end PCs.
+     It automatically tweaks and optimizes complex render settings that beginners often find confusing or hard to manage. 
+     Instead of manually experimenting with every option, ReFlux intelligently evaluates different settings and chooses the most efficient configuration for your scene. 
+     It reduces the need for trial-and-error by analyzing what works best for performance and quality, making heavy rendering tasks smoother, faster, and more beginner-friendly without sacrificing results.
+      </p>
+  </h2>
+  <p class="subtitle reveal">
+    Instead of wasting time adjusting settings, you can focus purely on creativity and output quality.
+  </p>
+
+</div>
+
+<div class="how-it-works reveal">
+
+  <h2 class="section-title">How it works</h2>
+
+  <div class="steps">
+
+    <div class="step">
+      <div class="circle">1</div>
+      <h3>Install</h3>
+      <p>Download and install ReFlux into Blender in seconds.</p>
+    </div>
+
+    <div class="arrow">→</div>
+
+    <div class="step">
+      <div class="circle">2</div>
+      <h3>Activate</h3>
+      <p>Enable the addon and let it optimize your render settings.</p>
+    </div>
+
+    <div class="arrow">→</div>
+
+    <div class="step">
+      <div class="circle">3</div>
+      <h3>Create</h3>
+      <p>Start rendering faster with better performance instantly.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="end reveal" id="download"> <!-- ✅ ADDED ID HERE -->
+  <h2>Ready to create?</h2>
+
+  <div class="end-buttons">
+    <a href="ADownload.html" class="btn primary" id="downloadBtn">Download</a>
+  </div>
+</div>
+
+<footer class="footer">
+
+  <div class="footer-left">
+    
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="ReFlux Logo">
+      <h3>ReFlux</h3>
+    </div>
+
+    <p>reflux.addon.support@gmail.com</p>
+  </div>
+
+  <div class="footer-links">
+    <a href="terms.html">Terms & Conditions</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="ticket.html#bottom">Contact</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+
+</footer>
+<div id="confetti-container"></div>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReFlux | Profile</title>
+
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- PARALLAX BACKGROUND -->
+<div class="parallax-bg">
+  <div class="gradient-layer"></div>
+  <div class="glow-layer"></div>
+  <canvas id="particles"></canvas>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="logo-container">
+    <a href="index.html" class="logo-icon">
+      <img src="assets/logo.png" alt="ReFlux Logo">
+    </a>
+
+    <h1 id="logo">
+      <b>R</b><span id="logo-text"></span>Flux
+    </h1>
+  </div>
+
+  <button class="menu-toggle" onclick="toggleMenu(this)">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav id="nav">
+    <a href="features.html">Features</a>
+    <a href="donate.html" class="donate-glow">Donate❤️</a>
+    <a href="ticket.html">Submit a ticket</a>
+    <a href="#download">Download</a>
+    <a href="#" id="versionsBtn">Versions</a>
+    <a href="login.html">SIGNIN</a>
+  </nav>
+</header>
+
+<!-- PROFILE -->
+<div class="profile-wrapper">
+
+  <h1 class="page-title">Account Settings</h1>
+  <p class="page-subtitle">Manage your subscription and account details.</p>
+
+  <div class="glass-account-card">
+
+    <!-- EMAIL -->
+    <div class="account-row">
+      <p class="label">ACCOUNT EMAIL</p>
+      <h2 class="value" id="accountEmail">Loading...</h2>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- BADGE -->
+    <div class="account-row">
+      <p class="label">CURRENT BADGE</p>
+      <div id="badgeArea">Loading...</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <a href="donate.html" class="primary-btn">Donate❤️</a>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-left">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="ReFlux Logo">
+      <h3>ReFlux</h3>
+    </div>
+    <p>reflux.addon.support@gmail.com</p>
+  </div>
+
+  <div class="footer-links">
+    <a href="terms.html">Terms & Conditions</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="ticket.html#bottom">Contact</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+
+  <script src="universal/auth.js"></script>
+</footer>
+
+<!-- ✅ ONLY SCRIPT (FINAL CLEAN VERSION) -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDXV7NvAwwKcZioIKfQMZLSRzAFGsDpO-s",
+  authDomain: "reflux-4e31c.firebaseapp.com",
+  projectId: "reflux-4e31c",
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+// 🔥 THIS IS THE MAGIC
+onAuthStateChanged(auth, async (user) => {
+
+  if (!user) {
+    document.getElementById("accountEmail").textContent = "Not logged in";
+    document.getElementById("badgeArea").innerHTML = "<p>Please login</p>";
+    return;
+  }
+
+  const uid = user.uid;
+
+  try {
+    const snap = await getDoc(doc(db, "users", uid));
+
+    if (!snap.exists()) {
+      document.getElementById("accountEmail").textContent = user.email;
+      document.getElementById("badgeArea").innerHTML = "<p>No badge yet</p>";
+      return;
+    }
+
+    const data = snap.data();
+
+    // EMAIL
+    document.getElementById("accountEmail").textContent = data.email || user.email;
+
+    // BADGE
+    const badgeArea = document.getElementById("badgeArea");
+
+    if (data.badge) {
+      badgeArea.innerHTML = `
+        <img src="assets/${data.badge}.png" class="profile-badge">
+        <p class="badge-text">${data.badge.toUpperCase()} SUPPORTER</p>
+      `;
+    } else {
+      badgeArea.innerHTML = `<p>No badge yet</p>`;
+    }
+
+  } catch (err) {
+    console.error(err);
+  }
+
+});
+</script>
+
+</body>
+</html>

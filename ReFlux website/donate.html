@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>ReFlux | Donaton</title>
+  <link rel="stylesheet" href="donatestyle.css">
+  <script src="universal/auth.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+//protection without signin---------------------------------
+  <script>
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    if (!user) {
+      // 💾 save current page
+      localStorage.setItem("redirectAfterLogin", window.location.href);
+
+      // 🚀 go to login
+      window.location.href = "login.html";
+    }
+  </script>
+//ends here-------------------------------------------------
+
+  <link rel="stylesheet" href="universal/auth.css">
+</head>
+<body>
+
+<!-- BACKGROUND DOTS -->
+<div id="dots"></div>
+
+<!-- HEADER -->
+<header>
+  
+<div class="logo-container">
+  
+  <a href="index.html" class="logo-icon">
+    <img src="assets/logo.png" alt="ReFlux Logo">
+  </a>
+
+  <h1 id="logo">
+    <b>R</b><span id="logo-text"></span>Flux
+  </h1>
+
+</div>
+
+  <button class="menu-toggle" onclick="toggleMenu(this)">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="ticket.html">Submit a ticket</a>
+    <a href="index.html">Download</a>
+    <a href="login.html">SIGNIN</a>
+  </nav>
+</header>
+
+  <section class="pricing">
+
+    <div class="card">
+      <h1><img src="assets/bronze.png">Bronze</h1>
+      <h2 class="price" data-inr="50">₹50 <span>/month</span></h2>
+      <p>Everything you need to get started.</p>
+      <ul>
+        <li>✔️Bronze membership badge.</li>
+        <li>❌Name on website.</li>
+        <li>❌Link on website.</li>
+      </ul>
+      <button type="button">Donate</button>
+    </div>
+
+    <div class="card popular">
+      <div class="badge">MOST POPULAR</div>
+      <h1><img src="assets/silver.png">Silver</h1>
+      <h2 class="price" data-inr="129">₹129 <span>/month</span></h2>
+      <p>Feature.User</p>
+      <ul>
+        <li>✔️Silver membership badge.</li>
+        <li>✔️Name on website.</li>
+        <li>❌Link on website.</li>
+      </ul>
+      <button type="button">Donate</button>
+    </div>
+
+    <div class="card">
+      <h1><img src="assets/diamond.png">Diamond</h1>
+      <h2 class="price" data-inr="199">₹199 <span>/month</span></h2>
+      <p>Power.User</p>
+      <ul>
+        <li>✔️Gold membership badge.</li>
+        <li>✔️Name on website.</li>
+        <li>✔️Link on website.</li>
+      </ul>
+      <button type="button">Donate</button>
+    </div>
+
+  </section>
+
+
+<div class="currency-wrap">
+  <button id="currencyToggle">USD</button>
+</div>
+<section class="donation-extra">
+
+  <div class="card small-card">
+    <h1 class="support-heading">Boost The Server</h1>
+
+    <button class="discord-btn" onclick="window.open('https://discord.gg/PdtGGH4Q','_blank')">
+      <i class="fa-brands fa-discord"></i>
+      Donate
+    </button>
+  </div>
+
+</section>
+<div class="section-divider"></div>
+
+<p class="between-line">
+  Your support helps us improve ReFlux and build better tools for creators ❤️
+</p>
+<p class="between-line">
+  Every Donation Counts ❤️
+</p>
+
+<footer class="footer">
+
+  <div class="footer-left">
+    
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="ReFlux Logo">
+      <h3>ReFlux</h3>
+    </div>
+
+    <p>reflux.addon.support@gmail.com</p>
+  </div>
+
+  <div class="footer-links">
+    <a href="#">Terms & Conditions</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Contact</a>
+    <a href="#">Feedback</a>
+  </div>
+
+</footer>
+
+<!-- SCRIPT -->
+<script src="donatescript.js"></script>
+
+</body>
+</html>

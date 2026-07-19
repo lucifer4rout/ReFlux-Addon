@@ -103,6 +103,15 @@ Want to improve ReFlux? Contributions are welcome!
 
 ---
 
+## Support
+
+Website: refluxaddons.pages.dev
+Author: portfolio.swastikrout.workers.dev
+        alpha_ritish
+contact email: reflux.addon.support@gmail.com
+
+---
+
 ## 📜 License
 
 MIT License © 2026 ReFlux Team

@@ -1,121 +1,273 @@
-# ⚡ ReFlux — Faster Renders, Smarter Workflow
+# ⚡ ReFlux
 
-> Supercharge your rendering experience in Blender with **ReFlux** — the ultimate addon designed to **optimize performance**, **reduce render time**, and **keep your creative flow uninterrupted**.
+### Faster Renders. Smarter Workflows. More Time to Create.
+
+**ReFlux** is a performance-focused Blender addon designed to optimize rendering workflows, reduce unnecessary computation, and help artists spend less time waiting for renders.
+
+Whether you're creating stills, animations, architectural visualizations, or complex 3D scenes, ReFlux helps you get the most out of your system — without compromising your creative workflow.
 
 ---
 
 ## 🚀 What is ReFlux?
 
-**ReFlux** is a powerful Blender addon built for artists, designers, and animators who want **maximum rendering efficiency without compromising quality**. Whether you're working on complex scenes or tight deadlines, ReFlux intelligently optimizes your workflow so you can focus on creativity — not waiting.
+Rendering can be one of the most time-consuming parts of 3D production. Constantly adjusting samples, denoising settings, render quality, and hardware usage can take valuable time away from the creative process.
+
+**ReFlux simplifies this process.**
+
+It analyzes your scene and helps optimize your rendering workflow using intelligent presets, adaptive optimization tools, and real-time performance insights.
+
+> ⚡ **Optimize your workflow. Reduce wasted time. Render smarter.**
 
 ---
 
-## ✨ Key Features
+## ✨ Features
 
 ### ⚙️ Smart Render Optimization
 
-* Automatically adjusts render settings based on scene complexity
-* Balances quality and speed dynamically
+Automatically optimize your render workflow based on your scene and selected performance goals.
+
+* Adjusts relevant render settings
 * Reduces unnecessary computation
+* Balances render quality and performance
+* Helps eliminate excessive manual tweaking
+
+---
 
 ### 🔥 Adaptive Sampling Boost
 
-* Enhances Blender’s sampling system
-* Cuts down noise faster with fewer samples
-* Saves both time and system resources
+Improve render efficiency by optimizing sampling workflows.
+
+* Helps reduce noise more efficiently
+* Reduces unnecessary samples
+* Can improve render times
+* Helps maintain a balance between quality and performance
+
+---
 
 ### 🧠 Intelligent Resource Management
 
-* Optimizes CPU & GPU usage
-* Prevents system overload during heavy renders
-* Works seamlessly in the background
+Make better use of your available hardware during demanding workloads.
 
-### 🎛️ One-Click Presets
+* Monitors CPU and GPU usage
+* Helps manage system resources
+* Reduces unnecessary system strain
+* Designed to work alongside your normal Blender workflow
 
-* Choose from optimized presets:
+---
 
-  * **Draft Mode** (ultra-fast previews)
-  * **Balanced Mode** (best of both worlds)
-  * **Final Mode** (high-quality output)
+### 🎛️ One-Click Optimization Presets
+
+Choose the workflow that fits your current task.
+
+| Mode                 | Best For                                   |
+| -------------------- | ------------------------------------------ |
+| ⚡ **Draft Mode**     | Fast previews and quick iterations         |
+| ⚖️ **Balanced Mode** | Everyday rendering and animation workflows |
+| 🎬 **Final Mode**    | High-quality final output                  |
+
+Switch between modes quickly without manually adjusting multiple settings.
+
+---
 
 ### 📊 Real-Time Performance Insights
 
-* Monitor render efficiency live
-* Get suggestions to improve speed
-* Identify bottlenecks instantly
+Understand how your system and render are performing.
+
+* Monitor performance metrics
+* Identify potential bottlenecks
+* Track rendering efficiency
+* Get useful optimization suggestions
 
 ---
 
 ## 🖼️ Why Use ReFlux?
 
-Rendering can be one of the most time-consuming parts of 3D creation. **ReFlux eliminates wasted time** by ensuring your system is always running at peak efficiency.
+Traditional render optimization often involves manually changing multiple settings and repeatedly testing the results.
 
-✔ Faster renders
-✔ Smarter settings
-✔ Less manual tweaking
-✔ More time for creativity
+ReFlux aims to simplify that process.
+
+### With ReFlux, you can:
+
+✔ Spend less time adjusting settings
+✔ Optimize your workflow faster
+✔ Reduce unnecessary computation
+✔ Make better use of available hardware
+✔ Iterate through scenes more efficiently
+✔ Spend more time creating and less time waiting
+
+> **Your creativity shouldn't be limited by unnecessary waiting.**
 
 ---
 
 ## 🛠️ Installation
 
-1. Download the latest `ReFlux.zip` release
-2. Open Blender
-3. Go to **Edit → Preferences → Add-ons**
-4. Click **Install** and select the zip file
-5. Enable **ReFlux**
+### Method 1 — Install the Addon
+
+1. Download the latest `ReFlux.zip` release.
+
+2. Open **Blender**.
+
+3. Navigate to:
+
+   **Edit → Preferences → Add-ons**
+
+4. Click **Install**.
+
+5. Select the downloaded `ReFlux.zip` file.
+
+6. Enable the **ReFlux** addon.
 
 ---
 
 ## ▶️ How to Use
 
-1. Open the **ReFlux Panel** in the Render tab
-2. Select your desired optimization mode
-3. Click **"Optimize Scene"**
-4. Hit render — and enjoy the speed ⚡
+After installing ReFlux:
+
+1. Open your Blender project.
+2. Navigate to the **Render** tab.
+3. Locate the **ReFlux Panel**.
+4. Select your desired optimization mode.
+5. Click **Optimize Scene**.
+6. Start rendering.
+
+That's it.
+
+> ⚡ **Optimize → Render → Create**
 
 ---
 
-## 💡 Pro Tips
+## 💡 Recommended Workflow
 
-* Use **Draft Mode** for quick previews during modeling
-* Switch to **Balanced Mode** for animation workflows
-* Enable **Final Mode** only for final renders to save time
-* Combine ReFlux with GPU rendering for best results
+### 🧱 During Modeling
+
+Use **Draft Mode** for fast previews and quick scene iterations.
+
+### 🎞️ During Animation
+
+Use **Balanced Mode** to maintain a practical balance between quality and render performance.
+
+### 🎬 For Final Output
+
+Use **Final Mode** when preparing your final render or production output.
+
+### 🚀 For Maximum Performance
+
+Combine ReFlux optimization with GPU rendering where supported by your hardware and Blender configuration.
 
 ---
 
 ## 🧩 Compatibility
 
-* Blender 3.x and above
-* Supports Cycles (optimized)
-* Partial support for Eevee
+| Component         | Support                                 |
+| ----------------- | --------------------------------------- |
+| **Blender**       | Blender 3.x and newer                   |
+| **Cycles**        | Optimized support                       |
+| **Eevee**         | Partial support                         |
+| **CPU Rendering** | Supported                               |
+| **GPU Rendering** | Supported where compatible with Blender |
+
+> Compatibility and available features may vary depending on your Blender version, hardware, and scene configuration.
+
+---
+
+## 📦 Project Structure
+
+ReFlux is built with a focus on making Blender rendering workflows more efficient and easier to manage.
+
+Core functionality includes:
+
+* Render optimization tools
+* Performance monitoring
+* Optimization presets
+* Resource management
+* Scene analysis
+* Workflow-focused controls
+
+---
+
+## 🐛 Bug Reports & Feature Requests
+
+Found a bug or have an idea for a new feature?
+
+We'd love to hear from you.
+
+When reporting an issue, please include:
+
+* Blender version
+* ReFlux version
+* Operating system
+* Hardware specifications
+* Description of the issue
+* Steps to reproduce the problem
+* Screenshots or logs, if available
+
+The more information you provide, the easier it is to investigate and fix the issue.
 
 ---
 
 ## 🤝 Contributing
 
-Want to improve ReFlux? Contributions are welcome!
+Contributions are welcome!
 
-* Fork the repo
-* Create a feature branch
-* Submit a pull request
+If you'd like to help improve ReFlux:
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Make your changes.
+4. Test your changes thoroughly.
+5. Submit a pull request.
+
+Whether you're fixing a bug, improving performance, adding a feature, or improving documentation — every contribution helps.
 
 ---
 
-## Support
+## 🆘 Support
 
-* Website: refluxaddons.pages.dev
-* Author: * portfolio.swastikrout.workers.dev
-          * alpha_ritish
-* contact email: reflux.addon.support@gmail.com
+Need help with ReFlux, found a bug, or have a question?
+
+### 🌐 Website Support
+
+Visit the official ReFlux website for downloads, updates, documentation, and project information:
+
+**ReFlux Website:** `refluxaddons.pages.dev`
+
+### 📧 Contact
+
+For support requests, bug reports, and general inquiries:
+
+**[reflux.addon.support@gmail.com](mailto:reflux.addon.support@gmail.com)**
+
+### 👨‍💻 Authors
+
+#### Swastik Rout
+
+Portfolio: `portfolio.swastikrout.workers.dev`
+
+#### lucifer4rout
+
+GitHub: `github.com/lucifer4rout`
+
+#### AlphaRitish
+
+GitHub: `github.com/AlphaRitish`
 
 ---
 
 ## 📜 License
 
-MIT License © 2026 ReFlux Team
+ReFlux is released under the **MIT License**.
+
+Copyright © 2026 **ReFlux Team**
 
 ---
 
-> ⚡ **ReFlux — Because every second of rendering matters.**
+## ⚡ ReFlux
+
+### Because every second of rendering matters.
+
+**Optimize your scene.
+Improve your workflow.
+Create more.
+Wait less.**
+
+---

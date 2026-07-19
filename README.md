@@ -105,10 +105,9 @@ Want to improve ReFlux? Contributions are welcome!
 
 ## Support
 
-*Website: refluxaddons.pages.dev
-*Author: portfolio.swastikrout.workers.dev
-        alpha_ritish
-*contact email: reflux.addon.support@gmail.com
+* Fork the repo
+* Create a feature branch
+* Submit a pull request
 
 ---
 
